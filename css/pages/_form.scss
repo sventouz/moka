@@ -1,0 +1,45 @@
+.s-container.form h3 {
+  margin: 20px 0 5%;
+  color: #333;
+  @include fz(24);
+  font-weight: bold;
+  text-align: center;
+}
+
+.formSection {
+  .formItem {
+    display: flex;
+    margin-bottom: 3%;
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
+    p {
+      width: 300px;
+      @include fz(16);
+      line-height: 1.5;
+      color: #333;
+      @media screen and (max-width: 750px) {
+        width: 100%;
+        input,
+        textarea {
+          width: 100%;
+          color: #333;
+        }
+      }
+      .formRequired {
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+  .formAccept {
+    display: block;
+    text-align: center;
+  }
+  .formSubmit {
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+}

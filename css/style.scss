@@ -1,0 +1,168 @@
+/*
+Theme Name: moka
+Theme URI: 
+Description: 
+Author: jack
+Author URI: 
+*/
+
+@import 'include/normalize.scss';
+@import 'include/base.scss';
+@import 'include/mixin.scss';
+@import 'pages/top.scss';
+@import 'pages/about.scss';
+@import 'pages/blog.scss';
+@import 'pages/cd.scss';
+@import 'pages/live.scss';
+@import 'pages/archive.scss';
+@import 'pages/single.scss';
+@import 'pages/404.scss';
+@import 'pages/form.scss';
+//
+$text-grey: #333;
+span[data-cat="LIVE情報"] {
+  background: pink;
+}
+
+span[data-cat="お知らせ"] {
+  background: skyblue;
+}
+
+span[data-cat="ブログ"] {
+  background: rgb(253, 255, 130);
+}
+
+#tubular-container {
+  z-index: -10 !important;
+}
+
+.textUnderLine {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  &:after,
+  &:before {
+    position: absolute;
+    top: 1.3em;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background: $text-grey;
+    transition: .3s;
+  }
+  &:after {
+    right: 50%;
+  }
+  &:before {
+    left: 50%;
+  }
+  &:hover:before,
+  &:hover:after {
+    width: 50%;
+  }
+}
+
+//
+html {
+  img {
+    max-width: 100%;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    @media screen and (max-width: 980px) {
+      padding: 0 3%;
+    }
+  }
+  .l-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    @media screen and (max-width: 1280px) {
+      padding: 0 3%;
+    }
+    @media screen and (max-width: 750px) {
+      padding: 0 5%;
+    }
+  }
+  .m-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    @media screen and (max-width: 1160px) {
+      padding: 0 5%;
+    }
+  }
+  .s-container {
+    max-width: 750px;
+    margin: 0 auto;
+    @media screen and (max-width: 750px) {
+      padding: 0 5%;
+    }
+  }
+  .sns-container {
+    max-width: 750px;
+    margin: 0 auto;
+    @media screen and (max-width: 750px) {
+      max-width: 320px;
+    }
+  }
+}
+
+.pagination h2.screen-reader-text {
+  display: none;
+}
+
+.title {
+  margin-bottom: 10%;
+  p.topTitle {
+    display: flex;
+    align-items: center;
+    @include fz(24);
+    font-weight: bold;
+    &:before,
+    &:after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      background: #ddd;
+      display: block;
+    }
+    &:before {
+      margin-right: .4em;
+    }
+    &:after {
+      margin-left: .4em;
+    }
+  }
+}
+
+.st1 {
+  fill: #ffbd99;
+  stroke: #ffbd99;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  stroke-width: 1;
+  -webkit-animation: strokemoka 3s ease-in 0s;
+  animation: strokemoka 3s ease-in 0s;
+}
+
+@keyframes strokemoka {
+  0% {
+    stroke-dashoffset: 2000;
+    fill: transparent;
+  }
+  40% {
+    stroke-dashoffset: 2000;
+    fill: transparent;
+  }
+  70% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffbd99;
+  }
+}

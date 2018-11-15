@@ -1,0 +1,537 @@
+$text-grey: #333;
+//
+.topPage,
+.footerPage {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  #tubular-container,
+  #tubular-shield {
+    display: none;
+  }
+}
+
+//
+.skil,
+.sns,
+.notice,
+.boxes,
+.footerSns {
+  background: #fff;
+}
+
+// btn 
+.menuBtn {
+  position: fixed;
+  top: .5%;
+  right: 1%;
+  z-index: 120;
+}
+
+// header
+header {
+  background: url(//moka-music.work/wp-content/themes/moka/images/top/bg_skill.jpg) top center no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px 0;
+  z-index: 100;
+  transition: .5s;
+  border-bottom: 1px solid #ddd;
+  @media screen and (min-width: 750px) {
+    top: -80px;
+  }
+  @media screen and (max-width:750px) {
+    transition: 0s;
+  }
+  &.active {
+    top: 0;
+  }
+  &.secondGround {
+    position: initial;
+    margin-bottom: 5%;
+  }
+  @media screen and (max-width:750px) {
+    display: none;
+    padding: 0;
+    color: #fff;
+    background: url(//moka-music.work/wp-content/themes/moka/images/top/bg_skill_sp.jpg) top left no-repeat;
+    background-size: cover;
+  }
+  p {
+    margin: 2% 0;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 750px) {
+      display: block;
+      padding: 3% 2%;
+    }
+    li {
+      margin-right: 2%;
+      &:last-child {
+        padding-right: 0;
+      }
+      @media screen and (max-width:750px) {
+        margin-bottom: 15%;
+        padding-right: 0;
+        &:first-child {
+          margin-top: 15%;
+        }
+      }
+      a {
+        color: $text-grey;
+        @include fz(16);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        @media screen and (max-width: 750px) {
+          @include fz(20);
+          font-weight: normal;
+          display: block;
+          margin: 0 3%;
+          color: $text-grey;
+        }
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
+// secTitle
+.secTitle {
+  @include fz(14);
+  text-align: center;
+  padding: 25px 0 1.5%;
+  @media screen and (max-width: 750px) {
+    padding: 3% 0 15%;
+  }
+  h2 {
+    margin-bottom: 2%;
+    a {
+      width: 200px;
+      display: inline-block;
+    }
+  }
+  ul.headerMenu {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+    li {
+      margin-right: 2%;
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        @include fz(16);
+        color: $text-grey;
+        text-decoration: none;
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
+// mv 
+.mv {
+  @media screen and (max-width: 750px) {
+    .mvLoad {
+      background: url(//moka-music.work/wp-content/themes/moka/images/top/mv_sp.jpg) top center no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      position: relative;
+      img {
+        width: 200px;
+      } 
+    }
+  }
+  .bgCover {
+    img {
+      position: absolute;
+    }
+  }
+  video {
+    width: 100%;
+  }
+  img {
+    position: absolute;
+  }
+}
+
+.allDev,
+.winDev {
+  display: none;
+}
+
+.all {
+  .winDev {
+    display: none;
+  }
+  .allDev {
+    display: block;
+  }
+}
+
+.windows {
+  .winDev {
+    display: block;
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.firstEffect {
+  background: #fff;
+  overflow: hidden;
+  z-index: 100;
+  p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    svg {
+      position: absolute;
+      z-index: 900;
+    }
+    span {
+      position: absolute;
+    }
+  }
+}
+
+// notice
+.notice {
+  padding: 8% 0 0;
+  h2 {
+    font-weight: bold;
+    @include fz(26);
+    color: $text-grey;
+    text-decoration: none;
+    text-align: center;
+  }
+  .noticeBox {
+    margin: 0 5%;
+    padding: 5% 0 10%;
+    li {
+      padding-bottom: 5%;
+      @include fz(16);
+      line-height: 1.5;
+      @media screen and (max-width: 750px) {
+        padding-bottom: 8%;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      span {
+        vertical-align: top;
+      }
+      a {
+        width: 350px;
+        display: inline-block;
+        color: $text-grey;
+        @media screen and (max-width: 750px) {
+          width: 300px;
+        }
+        @media screen and (max-width:400px) {
+          width: 250px;
+        }
+      }
+      .article_category {
+        width: 100px;
+        margin-right: 20px;
+        display: inline-block;
+        @include fz(12);
+        padding: 0 5px;
+        text-align: center;
+        @media screen and (max-width: 750px) {
+          width: auto;
+          margin-right: 0;
+        }
+      }
+      .noticeDate {
+        display: inline-block;
+        width: 150px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        @include fz(14);
+        color: $text-grey;
+        @media screen and (max-width: 750px) {
+          display: block;
+          padding-bottom: 3%;
+          @include fz(12);
+        }
+      }
+    }
+    .moreNews {
+      padding-top: 5%;
+      @include fz(16);
+      text-align: right;
+      a {
+        color: $text-grey;
+      }
+    }
+  }
+}
+
+// skills
+.skill {
+  padding-bottom: 5%;
+  background: url(//moka-music.work/wp-content/themes/moka/images/top/bg_skill.jpg) top center no-repeat;
+  ul {
+    display: flex;
+    padding: 5% 0;
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        opacity: .9;
+      }
+    }
+    h3 {
+      padding: 5% 0 3%;
+      @include fz(24);
+      color: $text-grey;
+      font-weight: bold;
+      text-align: center;
+    }
+    li {
+      width: 24%;
+      margin-right: 1%;
+      text-align: center;
+      @media screen and (max-width: 750px) {
+        width: 100%;
+        padding-right: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    p {
+      padding: 2% 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $text-grey;
+      text-align: left;
+    }
+  }
+}
+
+.sns {
+  padding: 5% 0;
+  .sns-container {
+    display: flex;
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
+    .twitter,
+    .instagram {
+      width: 320px;
+      @media screen and (max-width: 750px) {
+        margin: 0 auto;
+      }
+    }
+    .twitter {
+      margin-right: 60px;
+      @media screen and (max-width: 750px) {
+        margin-right: 0;
+      }
+    }
+    .instagram {
+      padding-left: 3px;
+    }
+  }
+}
+
+// footer 
+.boxes {
+  padding: 50px 0;
+  @media screen and (max-width: 750px) {
+    margin: 10% 0;
+  }
+  ul {
+    display: flex;
+    background: #fff;
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
+    li {
+      width: 25%;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      @media screen and (max-width: 750px) {
+        width: calc(50% - 1px);
+        float: left;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &:hover {
+        background: url(//moka-music.work/wp-content/themes/moka/images/top/bg_skill.jpg) top center no-repeat;
+        transition: 1s;
+      }
+      a {
+        display: block;
+        padding: 15% 0;
+        color: $text-grey;
+        text-decoration: none;
+        .skill_en {
+          display: block;
+          @include fz(16);
+          font-weight: bold;
+        }
+        .skill_ja {
+          display: block;
+          @include fz(14);
+        }
+      }
+    }
+  }
+  &.secondGround {
+    margin-top: 7%;
+  }
+}
+
+.banner {
+  ul li {
+    padding-bottom: 4%;
+  }
+}
+
+.footerSns {
+  padding: 3% 0;
+  @media screen and (max-width: 750px) {
+    margin: 6% 0;
+  }
+  .container.footer {
+    padding: 0;
+    display: flex;
+    justify-content: center
+  }
+  div {
+    padding-right: 10px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  div a img {
+    width: 30px;
+  }
+}
+
+footer {
+  .copyright {
+    background: #fff;
+    font-size: 12px;
+    color: $text-grey;
+    padding-bottom: 30px;
+    text-align: center;
+    @media screen and (max-width: 750px) {
+      margin-bottom: 5%;
+    }
+  }
+}
+
+/* toggle-panel */
+
+.menuBtn {
+  display: none;
+}
+
+#panel-btn {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px 0 0;
+  border-radius: 50%;
+  background: #ffbd99;
+}
+
+#panel-btn:hover {
+  opacity: .8;
+}
+
+#panel-btn-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  margin: -1px 0 0 -7px;
+  background: #fff;
+  transition: .2s;
+}
+
+#panel-btn-icon:before,
+#panel-btn-icon:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  margin-left: -7px;
+  background: #fff;
+  transition: .3s;
+}
+
+#panel-btn-icon:before {
+  margin-top: -6px;
+}
+
+#panel-btn-icon:after {
+  margin-top: 4px;
+}
+
+#panel-btn .close {
+  background: transparent;
+}
+
+#panel-btn .close:before,
+#panel-btn .close:after {
+  margin-top: 0;
+}
+
+#panel-btn .close:before {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#panel-btn .close:after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+#panel {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 120px 0;
+  background: #ffbd99;
+  text-align: center;
+}
+
+.fitImg {
+  position: absolute;
+}

@@ -1,0 +1,43 @@
+.liveInfo	{
+	ul {
+		li.liveInfo_ex {
+			font-weight: bold;
+			@media screen and (max-width:750px){
+				display: none;
+			}
+		}
+		li {
+			display: flex;
+			padding-bottom: 2%;
+			margin-bottom: 5%;
+			border-bottom: 1px solid #ddd;
+			@media screen and (max-width:750px){
+				display: block;
+			}
+			.live-date {
+				width: 150px;
+				@include fz(12);
+			}
+			.live-place {
+				width: 150px;
+				@media screen and (max-width:750px){
+					padding-bottom: 2%;
+				}
+			}
+			.live-name {
+				max-width: 400px;
+				@media screen and (max-width:750px){
+					@include fz(16);
+					font-weight: bold;
+				}
+			}
+			span {
+				display: inline-block;
+				padding-right: 3%;
+				@include fz(14);
+				line-height: 1.5;
+				color: #333;
+			}
+		}
+	}
+}

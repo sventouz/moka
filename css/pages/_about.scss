@@ -1,0 +1,37 @@
+// about
+
+// profile 
+
+.profile {
+	.aboutSpace {
+		padding: 20px 0 10px;
+	}
+}
+
+.profileBox {
+	display: flex;
+	@media screen and (max-width:750px){
+		display: block;
+
+	}
+	.profilePic, .profileTxt {
+		max-width: 550px;
+		@media screen and (max-width:750px){
+			margin: 0 auto;
+		}
+	}
+	.profilePic {
+		padding-right: 5%;
+		@media screen and (max-width:750px){
+			padding-right: 0;
+		}
+	}
+	.profileTxt {
+		@include fz(16);
+		line-height: 1.5;
+		h3 {
+			@include fz(24);
+			padding-bottom: 2%;
+		}
+	}
+}

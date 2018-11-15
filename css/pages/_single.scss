@@ -1,0 +1,80 @@
+.singleContent {
+	$text-grey: #333;
+	color: $text-grey;
+	a {
+		color: $text-grey;
+	}
+	h1 {
+		margin-bottom: 3%;
+		@include fz(30);
+		line-height: 1.3;
+		font-weight: bold;
+		@media screen and (max-width:750px){
+			@include fz(20);
+		}
+	}
+	.kiji-info {
+		@include fz(14);
+		text-align: right;
+		.kiji-date {
+			margin-right: 10px;
+		}
+	}
+	.singleContentText {
+		margin: 5% 0;
+		p {
+			line-height: 1.5;
+		}
+		img {
+			margin: 3% 0;
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.paging {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15%;
+		@include fz(14);
+		line-height: 1.5;
+		@media screen and (max-width:750px){
+			@include fz(12);
+		}
+		p {
+			max-width: 30%;
+		}
+	}
+	article {
+		line-height: 1.5;
+		@include fz(16);
+		color: #333;
+		h1 {
+			margin: 3% 3% 3% 0;
+			@include fz(30);
+			font-weight: bold;
+		}
+		h2 {
+			margin: 3% 0;
+			padding: 2%;
+			@include fz(26);
+			border-left: 3px solid #333;
+		}
+		h3, h4, h5, h6 {
+			margin: 3% 0;
+			padding: 2% 2% 0;
+			@include fz(20);
+			border-bottom: 3px solid #eee;
+		}
+		p {
+			margin: 5% 0;
+		}
+		ul {
+			padding-left: 5%;
+			list-style: inherit;
+			li {
+				@include fz(14);
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.notFound {
+	h2 {
+		@include fz(20);
+		font-weight: bold;
+		text-align: center;
+	}
+	p {
+		margin-top: 5%;
+		@include fz(16);
+		text-align: center;
+	}
+}

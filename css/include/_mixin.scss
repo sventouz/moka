@@ -1,0 +1,11 @@
+//mixin
+
+// @media screen and (max-width: 750px) {
+// 	html {
+// 		font-size: calc(100vw / 32);
+// 	}
+// }
+
+@mixin fz($font_size){
+	font-size: $font_size + px;
+}

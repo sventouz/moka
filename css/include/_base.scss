@@ -1,0 +1,45 @@
+//@include
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.is-pc-show {
+	display: block;
+	@media screen and (max-width:750px){
+		display: none;
+	}
+}
+
+.is-sp-show {
+	display: none;
+	@media screen and (max-width:750px){
+		display: block;
+	}
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+// youtube
+
+.respoYoutube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.respoYoutube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
