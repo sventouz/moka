@@ -14,6 +14,7 @@
 		<li class="textUnderLine"><a href="<?php echo home_url('/live/'); ?>">LIVE</a></li>
 		<li class="textUnderLine"><a href="<?php echo home_url('/cd/'); ?>">CD</a></li>
 		<li class="textUnderLine"><a href="<?php echo home_url('/contact/'); ?>">CONTACT</a></li>
+		<li class="textUnderLine"><a href="https://line.me/R/ti/p/%40vts1083c" target="_blank">LINE</a></li>
 	</ul>
 </div>
 
@@ -34,7 +35,7 @@
 			'orderby' => 'post_date',
 			'order' => 'DESC',
 			'post_type' => 'post',
-			'post_status' => 'publish'
+			'post_status' => 'publish',
 		);
 		$the_query = new WP_Query($args);
 		if ( $the_query->have_posts() ) :

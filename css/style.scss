@@ -9,6 +9,7 @@ Author URI:
 @import 'include/normalize.scss';
 @import 'include/base.scss';
 @import 'include/mixin.scss';
+@import 'include/swiper.scss';
 @import 'pages/top.scss';
 @import 'pages/about.scss';
 @import 'pages/blog.scss';
@@ -30,6 +31,10 @@ span[data-cat="お知らせ"] {
 
 span[data-cat="ブログ"] {
   background: rgb(253, 255, 130);
+}
+
+span[data-cat="ライブの日程"] {
+  background: rgb(160, 255, 168);
 }
 
 #tubular-container {

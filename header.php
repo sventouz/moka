@@ -19,6 +19,14 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 	<link rel="apple-touch-icon" sizes="192x192" href="<?php bloginfo('template_url'); ?>/images/common/icon/touch-icon.png">
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/common/icon/touch-icon.png">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132788262-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-132788262-1');
+	</script>
 	<?php wp_head(); ?>
 </head>
 
@@ -35,5 +43,6 @@
 				<li class="textUnderLine"><a href="<?php echo home_url('/live/'); ?>">LIVE</a></li>
 				<li class="textUnderLine"><a href="<?php echo home_url('/cd/'); ?>">CD</a></li>
 				<li class="textUnderLine"><a href="<?php echo home_url('/contact/'); ?>">CONTACT</a></li>
+				<li class="textUnderLine"><a href="https://line.me/R/ti/p/%40vts1083c" target="_blank">LINE</a></li>
 			</ul>
 		</header>

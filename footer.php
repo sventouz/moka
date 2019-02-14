@@ -6,6 +6,7 @@
 					<li><a href="<?php echo home_url('/live/'); ?>"><span class="skill_en">LIVE</span><br><span class="skill_ja">ライブ情報</span></a></li>
 					<li><a href="<?php echo home_url('/cd/'); ?>"><span class="skill_en">CD</span><br><span class="skill_ja">CD情報</span></a></li>
 					<li><a href="<?php echo home_url('/contact/'); ?>"><span class="skill_en">CONTACT</span><br><span class="skill_ja">お問い合わせ・出演依頼</span></a></li>
+					<li><a href="https://line.me/R/ti/p/%40vts1083c" target="_blank"><span class="skill_en">Official LINE</span><br><span class="skill_ja">公式ライン</span></a></li>
 				</ul>
 			</div>
 			<!--boxes-->
@@ -23,7 +24,7 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<!-- <script src="<?php bloginfo('template_url'); ?>/js/jquery.tubular.js"></script> -->
+	<script src="<?php bloginfo('template_url'); ?>/js/swiper.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 	<?php wp_footer(); ?>
 </body>

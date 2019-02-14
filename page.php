@@ -9,6 +9,7 @@
 		<li class="textUnderLine"><a href="<?php echo home_url('/live/'); ?>">LIVE</a></li>
 		<li class="textUnderLine"><a href="<?php echo home_url('/cd/'); ?>">CD</a></li>
 		<li class="textUnderLine"><a href="<?php echo home_url('/contact/'); ?>">CONTACT</a></li>
+		<li class="textUnderLine"><a href="https://line.me/R/ti/p/%40vts1083c" target="_blank">LINE</a></li>
 	</ul>
 </div>
 	<!--記事本文-->
